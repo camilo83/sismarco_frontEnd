@@ -26,7 +26,7 @@ describe('Given AppRoutes component', () => {
 
   describe('When we navigate to error page', () => {
     const MockedErrorComponent = jest.fn().mockReturnValue(<h1>error</h1>);
-    jest.mock('../../pages/errorPage/errorPage', () => MockedErrorComponent);
+    jest.mock('../../pages/errorPage/errorpage', () => MockedErrorComponent);
     let element: HTMLElement;
     beforeEach(async () => {
       await act(async () => {
